@@ -1,0 +1,33 @@
+footer {
+    padding-top: 1rem;
+    background-color: $turquesa;
+    width: 100%;  
+    text-align: center;
+    h2 {
+        font-family: $arvo;
+        font-weight: $regular-arvo;
+        font-size: 19pt !important;
+        color: $blanco;
+    }
+    
+    p{
+        font-family: $open-sans;
+        font-weight: $light-open;
+        font-size: 10pt;
+        color: $blanco;
+        margin: 0;
+        padding: 1rem;
+        background-color: $turquesa;
+    }
+}
+@media (max-width: 768px){
+footer {
+    h2 {
+        font-size:15pt !important;
+
+    }
+}
+}
+
+
+

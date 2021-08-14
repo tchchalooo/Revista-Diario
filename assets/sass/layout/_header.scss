@@ -1,0 +1,196 @@
+/*menú y logo*/
+#navbar {
+    background-color: $turquesa;
+    height: 8.125rem;
+    width: 100%;
+    padding: 2rem 3.125rem;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-family: $arvo;
+        font-weight: $regular-arvo;
+        color: $blanco;
+        font-size: 35pt;
+    }
+}
+
+/*links de navegación*/
+nav {
+    display: flex;
+    justify-self: flex-end;
+    font-family: $open-sans;
+    font-weight: $light-open;
+    color: $blanco;
+    font-size: 18pt;
+
+    a {
+        color: $blanco;
+        text-decoration: none;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+        &:hover {
+            color: $turquesa-oscuro;
+        }
+    }
+
+    /*barra buscar*/
+    input {
+        margin-left: 0.5rem;
+    }
+
+}
+
+//Dropdown hambuguesa
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.show {
+    display: block;
+}
+
+/*links hamburguesa*/
+#myDropdown {
+    a:hover {
+        background-color: $turquesa-oscuro;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav {
+
+        a {
+            display: none;
+        }
+
+        input {
+            display: none;
+        }
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        transition: box-shadow 0.15s ease-in-out;
+    }
+
+    .hamburguesita-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .hamburguesita .hamburguesita-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .dropdown-content {
+        display: none;
+        background-color: $menta-oscuro;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        font-family: $open-sans;
+        font-weight: $light-open;
+    }
+
+    .dropdown-content a {
+        color: $blanco;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .filete {
+        border-top: 1px solid $blanco;
+    }
+}
+
+@media (min-width: 992px) {
+    .hamburguesita {
+        display: none;
+    }
+
+    .dropdown-content {
+        display: flex;
+        justify-self: flex-end;
+        font-family: $open-sans;
+        font-weight: $light-open;
+        color: $blanco;
+        font-size: 18pt;
+
+        a {
+            color: $blanco;
+            text-decoration: none;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+
+            &:hover {
+                color: $turquesa-oscuro;
+            }
+        }
+
+        /*barra buscar*/
+        input {
+            margin-left: 0.5rem;
+        }
+    }
+
+    #myDropdown {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        height: 6.5rem;
+
+        &__logo {
+            font-size: 20pt;
+        }
+    }
+
+    .cards {
+        &__titulo {
+            font-size: 8pt !important;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    #navbar {
+        height: 6.5rem;
+
+        &__logo {
+            font-size: 18pt;
+        }
+    }
+
+}
+
+//nelson ponganos un 10!important
