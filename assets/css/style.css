@@ -59,29 +59,6 @@ footer {
   font-size: 35pt;
 }
 
-/*links de navegación*/
-nav {
-  display: flex;
-  justify-self: flex-end;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 300;
-  color: #ffffff;
-  font-size: 18pt;
-  /*barra buscar*/
-}
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-nav a:hover {
-  color: #124545;
-}
-nav input {
-  margin-left: 0.5rem;
-}
-
 .dropbtn {
   background-color: #3498DB;
   color: white;
@@ -106,13 +83,6 @@ nav input {
 }
 
 @media (max-width: 991px) {
-  .nav a {
-    display: none;
-  }
-  .nav input {
-    display: none;
-  }
-
   .navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
@@ -329,16 +299,14 @@ footer p {
   max-width: 100%;
   height: auto;
 }
-
-ul {
+.listado-derecho ul {
   padding-left: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
 }
-
-li {
+.listado-derecho li {
   text-align: center;
 }
 

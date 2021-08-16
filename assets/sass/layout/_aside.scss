@@ -20,21 +20,19 @@
         max-width: 100%;
         height: auto;
     }
+    ul {
+        padding-left: 0;
+        list-style:none;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+    }
+    
+    li {
+        text-align:center;
+    }
     
 }
-
-ul{
-    padding-left: 0;
-    list-style:none;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-}
-
-li{
-    text-align:center;
-}
-
 .textoaside {
     font-family: $open-sans;
     font-weight: $light-open!important;

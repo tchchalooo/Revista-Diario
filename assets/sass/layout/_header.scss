@@ -4,7 +4,6 @@
     height: 8.125rem;
     width: 100%;
     padding: 2rem 3.125rem;
-
     &__menu {
         display: flex;
         justify-content: space-between;
@@ -17,33 +16,6 @@
         color: $blanco;
         font-size: 35pt;
     }
-}
-
-/*links de navegación*/
-nav {
-    display: flex;
-    justify-self: flex-end;
-    font-family: $open-sans;
-    font-weight: $light-open;
-    color: $blanco;
-    font-size: 18pt;
-
-    a {
-        color: $blanco;
-        text-decoration: none;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-
-        &:hover {
-            color: $turquesa-oscuro;
-        }
-    }
-
-    /*barra buscar*/
-    input {
-        margin-left: 0.5rem;
-    }
-
 }
 
 //Dropdown hambuguesa
@@ -73,17 +45,6 @@ nav {
 }
 
 @media (max-width: 991px) {
-    .nav {
-
-        a {
-            display: none;
-        }
-
-        input {
-            display: none;
-        }
-    }
-
     .navbar-toggler {
         padding: 0.25rem 0.75rem;
         font-size: 1.25rem;
@@ -149,7 +110,6 @@ nav {
             text-decoration: none;
             margin-left: 0.5rem;
             margin-right: 0.5rem;
-
             &:hover {
                 color: $turquesa-oscuro;
             }
@@ -169,12 +129,11 @@ nav {
 @media (max-width: 768px) {
     #navbar {
         height: 6.5rem;
-
         &__logo {
             font-size: 20pt;
         }
     }
-
+    
     .cards {
         &__titulo {
             font-size: 8pt !important;
@@ -185,12 +144,8 @@ nav {
 @media (max-width: 576px){
     #navbar {
         height: 6.5rem;
-
         &__logo {
             font-size: 18pt;
         }
     }
-
 }
-
-//nelson ponganos un 10!important
